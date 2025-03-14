@@ -20,8 +20,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="2043946623"
-KEY="6957450340:AAE3OyomqZQgf7SV68UUISd2Po-_Gd-Pwns"
+CHATID="204394623"
+KEY="695745030:AAE3OyomqZQgf7SV68UUISd2Po-_Gd-Pwns"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -29,7 +29,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m               VALLSTORE VPN TUNNELING\033[0m"
+echo -e "\033[96;1m               JESSVPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -86,9 +86,9 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/xyzval/VVIP/refs/heads/main/REGIST | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-valid=$(curl https://raw.githubusercontent.com/xyzval/VVIP/refs/heads/main/REGIST | grep $MYIP | awk '{print $3}')
+valid=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $3}')
 echo "$valid" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -107,7 +107,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/xyzval/VVIP/refs/heads/main/REGIST | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -115,7 +115,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/xyzval/VVIP/main/"
+REPO="https://raw.githubusercontent.com/Riswan481/VVIP/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -282,8 +282,8 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/xyzval/VVIP/refs/heads/main/REGIST | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/xyzval/VVIP/refs/heads/main/REGIST | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 RX=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 8) # Menghasilkan nomor acak antara 1000 dan 9999
 TEXT="

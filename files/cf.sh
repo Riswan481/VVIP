@@ -1,10 +1,10 @@
 #!/bin/bash
 apt install jq curl -y
-domain=rasiya.cloud
+domain=tryn.cloud
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 IP=$(wget -qO- icanhazip.com)
-CF_KEY=1781894fb664d5af0011b8fb79234a9a151ed
-CF_ID=Vpnscriswan293@gmail.com
+CF_KEY=e54ac7edea27dbef7cc1fdb13025d47da45c2
+CF_ID=nvatryn@gmail.com
 dns=${sub}.${domain}
 wilcard=*.${dns}
 set -euo pipefail

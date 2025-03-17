@@ -11,7 +11,7 @@
 <pre><code>wget https://raw.githubusercontent.com/Riswan481/VVIP/main/files/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
 ### FIX DROPBEAR
-<pre><code>wget https://raw.githubusercontent.com/xyzval/VVIP/main/fix.sh && chmod +x fix.sh && ./fix.sh</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/Riswan481/VVIP/main/fix.sh && chmod +x fix.sh && ./fix.sh</code></pre>
 
 ### SLOW DNS
 <pre><code>wget https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/install-sldns && chmod +x install-sldns && ./install-sldns</code></pre>
@@ -51,12 +51,7 @@ Kembali ke menu utama dan cek apakah haproxy sudah berjalan dengan normal
 ```
 SUCCESSFUL ✓
 ```
-VALL VPN TUNNEL:
+JESVPN TUNNEL:
 
-<a href="https://t.me/nvtryn" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-```
-WA: 
-```
-```
-TELE: 
+<a href="https://t.me/JesVpnt" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ```

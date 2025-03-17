@@ -53,4 +53,7 @@ SUCCESSFUL ✓
 ```
 JESVPN TUNNEL:
 
-<a href="https://t.me/JesVpnt" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
+<a href="https://t.me/JesVpnt" target="_blank">
+  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue">
+</a><br>
+<img src="https://i.imghippo.com/files/cNi1986HgM.jpg" alt="Additional Image">

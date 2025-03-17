@@ -1,30 +1,13 @@
 
 # UP REPO DEBIAN
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
-# UP REPO UBUNTU
-<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && reboot</pre></code>
-
 ### INSTALL SCRIPT 
 <pre><code>sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update -y && apt upgrade -y && apt install -y bzip2 gzip coreutils screen curl unzip && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/Riswan481/VVIP/main/setup-main.sh && chmod +x setup-main.sh && sed -i -e 's/\r$//' setup-main.sh && screen -S setupku ./setup-main.sh</code></pre>
-
-### PERINTAH UPDATE 
-<pre><code>wget https://raw.githubusercontent.com/Riswan481/VVIP/main/files/update.sh && chmod +x update.sh && ./update.sh</code></pre>
-
 ### FIX DROPBEAR
 <pre><code>wget https://raw.githubusercontent.com/Riswan481/VVIP/main/fix.sh && chmod +x fix.sh && ./fix.sh</code></pre>
 
 ### SLOW DNS
 <pre><code>wget https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/install-sldns && chmod +x install-sldns && ./install-sldns</code></pre>
-
-Masukkan perintah dibawah jika terdapat eror pada satus haproxy
-```
-cat /etc/xray/xray.key /etc/xray/xray.crt > /etc/haproxy/hap.pem
-```
-Setelah sertifikat dan kunci ssl berhasil dipindahkan, restart haproxynya
-```
-sudo systemctl restart haproxy
-```
-Kembali ke menu utama dan cek apakah haproxy sudah berjalan dengan normal
 
 ### TESTED ON OS 
 - UBUNTU 20

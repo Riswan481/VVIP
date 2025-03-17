@@ -32,6 +32,10 @@ echo -e "${YELLOW}----------------------------------------------------------${NC
 echo -e "\033[96;1m               JESSVPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
+echo -e "${GREENBG}Selamat datang di Skrip JESSVPN Tunneling!${NC}"
+echo -e "${YELLOW}Skrip ini akan mengonfigurasi pengaturan VPN dan mengoptimalkan koneksi jaringan Anda.${NC}"
+echo -e "${RED}Silakan tunggu sementara proses ini selesai...${NC}"
+echo ""
 sleep 3
 clear
 # while true; do

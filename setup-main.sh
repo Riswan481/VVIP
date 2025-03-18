@@ -34,12 +34,12 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 # Display banner
 clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m               JESSVPN TUNNELING\033[0m"
+echo -e "\033[96;1m        WELCOME TO SCRIPT JESSVPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 
 # Prompt for password (presumably for 'Risvpn')
-read -sp "Masukkan kata key sebelum menginstal: " password
+read -sp "Masukkan key sebelum menginstal: " password
 
 # Logic after password input (if required for installation or setup)
 echo -e "\nPassword entered: $password"

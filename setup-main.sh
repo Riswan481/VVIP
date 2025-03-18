@@ -39,14 +39,14 @@ echo -e "${YELLOW}----------------------------------------------------------${NC
 echo ""
 
 # Prompt for password (presumably for 'Risvpn')
-read -sp "Masukkan kata sandisebelum menginstal: " password
+read -sp "Masukkan kata key sebelum menginstal: " password
 
 # Logic after password input (if required for installation or setup)
 echo -e "\nPassword entered: $password"
 
 # You can proceed with your VPN setup or other actions here
 # Example: If the password matches a known value, proceed with VPN setup
-if [[ "$password" == "your_password_here" ]]; then
+if [[ "$password" == "riswan1998" ]]; then
     echo -e "${GREENBG}Password accepted. Proceeding with VPN installation...${FONT}"
     # Add installation or setup commands here
 else

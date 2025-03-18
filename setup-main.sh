@@ -1,14 +1,9 @@
 #!/bin/bash
-
-# Clear screen
 clear
-
-# Update system and install required packages
-apt update -y
 apt upgrade -y
-apt install -y curl wondershaper
-
-# Define color variables
+apt update -y
+apt install curl
+apt install wondershaper -y
 Green="\e[92;1m"
 RED="\033[1;31m"
 YELLOW="\033[33m"
@@ -17,50 +12,25 @@ FONT="\033[0m"
 GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
 OK="${Green}--->${FONT}"
-EROR="${RED}[ERROR]${FONT}"
+EROR="${RED}[EROR]${FONT}"
 GRAY="\e[1;30m"
 NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
-
-# Get current date and IP address
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="204394623"
-KEY="695745030:AAE3OyomqZQgf7SV68UUISd2Po-_Gd-Pwns"
+CHATID="20434623"
+KEY="6957450340:AAE3OomqZQgf7SV68UUSd2Po-_Gd-Pwns"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-
-# Display banner
 clear
+export IP=$( curl -sS icanhazip.com )
+clear
+clear && clear && clear
+clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m        WELCOME TO SCRIPT JESSVPN TUNNELING\033[0m"
+echo -e "\033[96;1m               JESVPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo ""
-
-# Prompt for password (presumably for 'Risvpn')
-read -sp "Masukkan key sebelum menginstal: " password
-
-# Logic after password input (if required for installation or setup)
-echo -e "\nPassword entered: $password"
-
-# You can proceed with your VPN setup or other actions here
-# Example: If the password matches a known value, proceed with VPN setup
-if [[ "$password" == "riswan1998" ]]; then
-    echo -e "${GREENBG}Password accepted. Proceeding with VPN installation...${FONT}"
-    # Add installation or setup commands here
-else
-    echo -e "${RED}Incorrect password. Exiting...${FONT}"
-    exit 1
-fi
-
-# Send a Telegram notification with the system's public IP
-curl -s -X POST $URL -d chat_id=$CHATID -d text="VPN setup initiated on IP: $ipsaya at $TIME"
-
-# Further installation logic can go here
-echo -e "${GREENBG}Selamat datang di Skrip JESSVPN Tunneling!${NC}"
-echo -e "${YELLOW}Skrip ini akan mengonfigurasi pengaturan VPN dan mengoptimalkan koneksi jaringan Anda.${NC}"
-echo -e "${RED}Silakan tunggu sementara proses ini selesai...${NC}"
 echo ""
 sleep 3
 clear
@@ -116,9 +86,9 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/REGIST | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-valid=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $3}')
+valid=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/REGIST | grep $MYIP | awk '{print $3}')
 echo "$valid" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -137,7 +107,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/REGIST | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -145,7 +115,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/Riswan481/VVIP/main/"
+REPO="https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -312,8 +282,8 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/main/REGIST | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/REGIST | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/Riswan481/VVIP/xyzval/main/REGIST | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 RX=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 8) # Menghasilkan nomor acak antara 1000 dan 9999
 TEXT="

@@ -1,9 +1,14 @@
 #!/bin/bash
+
+# Clear screen
 clear
-apt upgrade -y
+
+# Update system and install required packages
 apt update -y
-apt install curl
-apt install wondershaper -y
+apt upgrade -y
+apt install -y curl wondershaper
+
+# Define color variables
 Green="\e[92;1m"
 RED="\033[1;31m"
 YELLOW="\033[33m"
@@ -12,26 +17,47 @@ FONT="\033[0m"
 GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
 OK="${Green}--->${FONT}"
-EROR="${RED}[EROR]${FONT}"
+EROR="${RED}[ERROR]${FONT}"
 GRAY="\e[1;30m"
 NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
+
+# Get current date and IP address
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
 CHATID="204394623"
 KEY="695745030:AAE3OyomqZQgf7SV68UUISd2Po-_Gd-Pwns"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
+
+# Display banner
 clear
-export IP=$( curl -sS icanhazip.com )
-clear
-clear && clear && clear
-clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "\033[96;1m               JESSVPN TUNNELING\033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
+
+# Prompt for password (presumably for 'Risvpn')
+read -sp "Masukkan kata sandisebelum menginstal: " password
+
+# Logic after password input (if required for installation or setup)
+echo -e "\nPassword entered: $password"
+
+# You can proceed with your VPN setup or other actions here
+# Example: If the password matches a known value, proceed with VPN setup
+if [[ "$password" == "your_password_here" ]]; then
+    echo -e "${GREENBG}Password accepted. Proceeding with VPN installation...${FONT}"
+    # Add installation or setup commands here
+else
+    echo -e "${RED}Incorrect password. Exiting...${FONT}"
+    exit 1
+fi
+
+# Send a Telegram notification with the system's public IP
+curl -s -X POST $URL -d chat_id=$CHATID -d text="VPN setup initiated on IP: $ipsaya at $TIME"
+
+# Further installation logic can go here
 echo -e "${GREENBG}Selamat datang di Skrip JESSVPN Tunneling!${NC}"
 echo -e "${YELLOW}Skrip ini akan mengonfigurasi pengaturan VPN dan mengoptimalkan koneksi jaringan Anda.${NC}"
 echo -e "${RED}Silakan tunggu sementara proses ini selesai...${NC}"

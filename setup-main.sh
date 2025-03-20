@@ -319,7 +319,7 @@ TIMEZONE=$(printf '%(%H:%M:%S)T')
 RX=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 8) # Menghasilkan nomor acak antara 1000 dan 9999
 TEXT="
 <code>────────────────────</code>
-  <b>✨ DETAIL PENGGUNA GRATIS ✨</b>
+   <b>✨ PENGGUNA GRATIS ✨</b>
 <code>────────────────────</code>
 <code>Domain : </code><code>$domain</code>
 <code>Date   : </code><code>$TIME</code>

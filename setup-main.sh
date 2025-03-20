@@ -47,11 +47,11 @@ echo -e "\nPassword entered: $password"
 
 # You can proceed with your VPN setup or other actions here
 # Example: If the password matches a known value, proceed with VPN setup
-if [[ "$password" == "riswan1998" ]]; then
+if [[ "$password" == "Riswan1998" ]]; then
     echo -e "${GREENBG}Password accepted. Proceeding with VPN installation...${FONT}"
     # Add installation or setup commands here
 else
-    echo -e "${RED}Incorrect password. Exiting...${FONT}"
+    echo -e "${RED}Incorrect password. salah Exiting...${FONT}"
     exit 1
 fi
 

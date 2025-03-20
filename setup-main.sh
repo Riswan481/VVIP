@@ -39,8 +39,9 @@ echo -e "${YELLOW}----------------------------------------------------------${NC
 echo ""
 
 # Prompt for password (presumably for 'Risvpn')
-read -sp "Masukkan key sebelum menginstal: " password
-
+echo "Gabung grup @jesvpntun untuk mendapatkan" 
+echo "password dengan perintah minta pw sc."
+read -sp "Masukkan password sebelum menginstal: " password
 # Logic after password input (if required for installation or setup)
 echo -e "\nPassword entered: $password"
 

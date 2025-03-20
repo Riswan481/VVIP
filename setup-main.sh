@@ -326,7 +326,7 @@ TEXT="
 <code>Time   : </code><code>$TIMEZONE</code>
 <code>Ip vps : </code><code>$MYIP</code>
 <code>Exp Sc : </code><code>Litme</code>
-<code>User   : </code><code>gratis</code>
+<code>Script : </code><code>gratis</code>
 <code>────────────────────</code>
 <i>Notifikasi Otomatis Dari Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"order prem","url":"https://t.me/JesVpnt"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'

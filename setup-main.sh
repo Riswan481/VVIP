@@ -20,8 +20,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="204396623"
-KEY="6957450340:AAE3OyomqZQgf7SV8UUISd2Po-_Gd-Pwns"
+CHATID="-1002029496202"
+KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -288,28 +288,18 @@ TIMEZONE=$(printf '%(%H:%M:%S)T')
 RX=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 8) # Menghasilkan nomor acak antara 1000 dan 9999
 TEXT="
 <code>────────────────────</code>
-<b>✨ DETAIL VPS ANDA ✨</b>
+    <b>✨ DETAIL VPS ANDA ✨</b>
 <code>────────────────────</code>
-<code>ID     : </code><code>$USRSC</code>
+<code>user   : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
-<code>Wilcard: </code><code>*.$domain</code>
 <code>Date   : </code><code>$TIME</code>
 <code>Time   : </code><code>$TIMEZONE</code>
 <code>Ip vps : </code><code>$MYIP</code>
 <code>Exp Sc : </code><code>$EXPSC</code>
-<code>User   : </code><code>root</code>
-<code>PASSWD : </code><code>$passwd</code>
+<code>Script : </code><code>Premium</code>
 <code>────────────────────</code>
-<code>TRX #$RX Transaksi Succes VPS
-────────────────────  
-║▌║║▌║▌║║▌║║▌║▌║║▌║║
-𝗖𝗢𝗡𝗧𝗔𝗖𝗧 :
-💬𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠
-☞ @nvtryn
-💬𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣
-☞ +6282300115583</code>
-<i>Simpan Baik-baik informasi ini tidak akan di kirim Ulang </i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/wendivpn"},{"text":"Contack","url":"https://wa.me/6283153170199"}]]}'
+<i>Notifikasi Otomatis Dari Github </i>
+"'&reply_markup={"inline_keyboard":[[{"text":"Order","url":"https://t.me/JesVpnt"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
